@@ -1,13 +1,17 @@
 package com.notahelloworld.kotlin.variables
 
+import android.graphics.drawable.ColorDrawable
+import android.graphics.drawable.Drawable
 import android.support.annotation.ColorRes
 import android.support.annotation.StringRes
 import com.notahelloworld.kotlin.R
 
-class ErrorViewModel3(
+class ErrorViewModel4(
     @StringRes val text: Int,
     @ColorRes val textColor: Int
 ) {
+
+  var backgroundColor = R.color.default_color
 
   var defaultString = R.string.default_text
   val defaultTextColor = R.color.default_color
@@ -23,4 +27,9 @@ class ErrorViewModel3(
     defaultString = default
   }
 
+  fun setBackgroundColor(background: Drawable) {
+    if (background is ColorDrawable) {
+      backgroundColor = background.color
+    }
+  }
 }

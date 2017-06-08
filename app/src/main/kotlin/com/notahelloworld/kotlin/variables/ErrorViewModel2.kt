@@ -4,7 +4,10 @@ import android.support.annotation.ColorRes
 import android.support.annotation.StringRes
 import com.notahelloworld.kotlin.R
 
-class ErrorViewModel2 {
+class ErrorViewModel2(
+    @StringRes val text: Int,
+    @ColorRes val textColor: Int
+) {
 
   val defaultString = R.string.default_text
   val defaultTextColor = R.color.default_color
@@ -13,7 +16,7 @@ class ErrorViewModel2 {
       @StringRes text: Int = defaultString,
       @ColorRes textColor: Int = defaultTextColor
   ): ErrorViewModel1 {
-    return ErrorViewModel1()
+    return ErrorViewModel1(text, textColor)
   }
 
 }
