@@ -1,6 +1,6 @@
 package com.notahelloworld.kotlin.nullable
 
-class UserRepository {
+class UserRepository1 {
 
   fun getUserName(userId: Int): String? {
     val user = UserDAO().getUser(userId)
