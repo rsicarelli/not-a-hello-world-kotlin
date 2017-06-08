@@ -4,7 +4,7 @@ import android.support.annotation.ColorRes
 import android.support.annotation.StringRes
 import com.notahelloworld.kotlin.R
 
-class ErrorViewModel3(
+class UserViewModel3(
     @StringRes val text: Int,
     @ColorRes val textColor: Int
 ) {
@@ -15,8 +15,8 @@ class ErrorViewModel3(
   fun toViewModel(
       @StringRes text: Int = defaultString,
       @ColorRes textColor: Int = defaultTextColor
-  ): ErrorViewModel1 {
-    return ErrorViewModel1(text, textColor)
+  ): UserViewModel1 {
+    return UserViewModel1(text, textColor)
   }
 
   fun setDefaultText(default: Int) {
