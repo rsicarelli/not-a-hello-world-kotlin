@@ -34,7 +34,7 @@ class LoadingFragment2 : Fragment() {
       textSize = 12f
     }
 
-    return super.onCreateView(inflater, container, savedInstanceState)
+    return view
   }
 
 }
