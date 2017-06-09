@@ -14,7 +14,7 @@ class UserRepository1 {
     }
   }
 
-  internal inner class User {
+  inner class User {
     var name: String? = null
   }
 
