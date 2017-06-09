@@ -4,19 +4,16 @@ import android.app.Activity
 import android.graphics.Color
 import android.os.Bundle
 import android.support.design.widget.Snackbar
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.LinearLayout
+import android.widget.FrameLayout
 import com.notahelloworld.kotlin.R
 
 class AlertActivity1 : Activity() {
 
-  val container by lazy { findViewById(R.id.container) as LinearLayout }
-
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_alert)
+
+    val container = findViewById(R.id.container) as FrameLayout
 
     Snackbar.make(
         container,

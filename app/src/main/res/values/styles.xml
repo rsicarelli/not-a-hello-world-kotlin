@@ -8,4 +8,14 @@
     <item name="colorAccent">@color/colorAccent</item>
   </style>
 
+  <style name="MediumText">
+    <item name="android:fontFamily">sans-serif-medium</item>
+    <item name="android:textStyle">normal</item>
+  </style>
+
+  <style name="LightText">
+    <item name="android:fontFamily">sans-serif-light</item>
+    <item name="android:textStyle">normal</item>
+  </style>
+
 </resources>

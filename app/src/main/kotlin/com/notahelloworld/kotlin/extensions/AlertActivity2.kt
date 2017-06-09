@@ -7,15 +7,14 @@ import com.notahelloworld.kotlin.R
 
 class AlertActivity2 : Activity() {
 
-  val container by lazy { findViewById(R.id.container) as LinearLayout }
-  val first by lazy { findViewById(R.id.first) as LinearLayout }
-  val second by lazy { findViewById(R.id.second) as LinearLayout }
-  val third by lazy { findViewById(R.id.third) as LinearLayout }
-  val fourth by lazy { findViewById(R.id.fourth) as LinearLayout }
-
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_alert)
+
+    val first = findViewById(R.id.first) as LinearLayout
+    val second = findViewById(R.id.second) as LinearLayout
+    val third = findViewById(R.id.third) as LinearLayout
+    val fourth = findViewById(R.id.fourth) as LinearLayout
 
     first.fadeOut().start()
     second.fadeIn().start()
