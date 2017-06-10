@@ -1,10 +1,10 @@
 package com.notahelloworld.kotlin.nullable;
 
-public class UserRepository {
+public class JavaUserRepository {
 
   public String getUserName(int userId) {
     User user = new UserDAO().getUser(userId);
-    return user.name;
+    return user.name; //NPE!!!
   }
 
   class UserDAO {

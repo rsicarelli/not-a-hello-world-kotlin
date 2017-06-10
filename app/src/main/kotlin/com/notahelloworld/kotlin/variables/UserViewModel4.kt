@@ -6,6 +6,7 @@ import android.support.annotation.ColorRes
 import android.support.annotation.StringRes
 import com.notahelloworld.kotlin.R
 
+//smart cast
 class UserViewModel4(
     @StringRes val text: Int,
     @ColorRes val textColor: Int

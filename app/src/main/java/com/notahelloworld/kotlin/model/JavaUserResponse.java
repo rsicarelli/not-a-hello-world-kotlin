@@ -1,6 +1,6 @@
-package com.notahelloworld.kotlin.architecture;
+package com.notahelloworld.kotlin.model;
 
-public class UserResponse {
+public class JavaUserResponse {
 
   private String id;
   private String name;
@@ -8,7 +8,7 @@ public class UserResponse {
   private String phone;
   private final String status;
 
-  public UserResponse(String id, String name, String email, String phone, String status) {
+  public JavaUserResponse(String id, String name, String email, String phone, String status) {
     this.id = id;
     this.name = name;
     this.email = email;

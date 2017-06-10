@@ -1,4 +1,4 @@
-package com.notahelloworld.kotlin.view
+package com.notahelloworld.kotlin.omg
 
 import android.app.Activity
 import android.content.Context

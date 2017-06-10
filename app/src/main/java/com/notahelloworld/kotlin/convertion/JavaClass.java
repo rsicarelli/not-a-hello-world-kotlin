@@ -2,7 +2,7 @@ package com.notahelloworld.kotlin.convertion;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class OldJavaClass {
+public class JavaClass {
 
   private final static AtomicInteger atomicInteger = new AtomicInteger(0);
 

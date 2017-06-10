@@ -4,7 +4,6 @@ import android.app.Activity
 import android.os.Bundle
 import android.widget.Button
 import com.notahelloworld.kotlin.R
-import com.notahelloworld.kotlin.extensions.hide
 
 class LoginActivity2 : Activity() {
 
@@ -13,8 +12,8 @@ class LoginActivity2 : Activity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
 
-    hideButton()
+    val height = getHeight()
   }
 
-  fun hideButton() = button.hide()
+  fun getHeight() = button.height
 }

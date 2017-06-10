@@ -9,10 +9,10 @@ import com.notahelloworld.kotlin.R
 
 class LoginActivity : Activity() {
 
-  val button by lazy { findViewById(R.id.search_button) as Button }
-
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
+
+    val button = findViewById(R.id.search_button) as Button
 
     button.setOnClickListener(object : View.OnClickListener {
       override fun onClick(view: View): Unit {

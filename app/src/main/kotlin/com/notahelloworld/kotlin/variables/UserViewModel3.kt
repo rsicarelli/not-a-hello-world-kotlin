@@ -4,6 +4,7 @@ import android.support.annotation.ColorRes
 import android.support.annotation.StringRes
 import com.notahelloworld.kotlin.R
 
+//val var
 class UserViewModel3(
     @StringRes val text: Int,
     @ColorRes val textColor: Int

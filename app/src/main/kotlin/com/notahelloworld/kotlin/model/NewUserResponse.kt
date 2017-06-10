@@ -1,4 +1,4 @@
-package com.notahelloworld.kotlin.architecture
+package com.notahelloworld.kotlin.model
 
 data class NewUserResponse(
     var id: String,

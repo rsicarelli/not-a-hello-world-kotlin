@@ -11,7 +11,7 @@ class UserActivity2 : Activity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
 
-    val userName = UserRepository().getUserName(123)
+    val userName = JavaUserRepository().getUserName(123)
 
     val container = findViewById(R.id.container) as FrameLayout
 

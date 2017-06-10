@@ -26,7 +26,6 @@ class LoginActivity3 : Activity() {
 
     val backgroundForButton = button to R.color.colorPrimary
 
-
     Log.d(javaClass.canonicalName, "${backgroundForButton.first} ${backgroundForButton.second} ")
   }
 

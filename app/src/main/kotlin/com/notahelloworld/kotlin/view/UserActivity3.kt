@@ -9,14 +9,15 @@ import com.notahelloworld.kotlin.view.UserView
 class UserActivity3 : Activity() {
 
   val container by lazy { findViewById(R.id.container) as FrameLayout }
+  val spacing by lazy { resources.getDimensionPixelSize(R.dimen.key_line) }
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
 
-    val userName = UserRepository().getUserName(123)
+    val userName = JavaUserRepository().getUserName(123)
 
     userName?.let {
-      container.addView(UserView(name = it, context = this))
+      container.addView(UserView(name = it, context = this, spacing = spacing))
     }
   }
 }
